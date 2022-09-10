@@ -14,7 +14,7 @@ const Cards = ({ data }) => {
                                 <div className="card_body">
                                     <div className="upper_data d-flex justify-content-between align-items-center">
                                         <h4 className='mt-2'>{element.rname}</h4>
-                                        
+                                        <span><button className='btn text-light col-lg-1' style={{ background: "#24014E" }}>Submit</button></span>
                                     </div>
 
                                     <div className="lower_data d-flex  justify-content-between">
