@@ -26,7 +26,6 @@ const Search = () => {
         }
     }
 
-    const zomatologo = "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
 
     useEffect(() => {
 
@@ -46,19 +45,19 @@ const Search = () => {
             <img
             
               alt=""
-              src="/logo.svg"
+              src="https://drive.google.com/uc?export=view&id=11YIhfZHQQKpS7bf7Fa9ogerKXdvJzh31"
               width="30"
-              height="90px"
+              
               className="d-inline-block align-top"
 
             />{' '}
-            React Bootstrap
+            Celestial Biscuit IGDTUW
           </Navbar.Brand>
         </Container>
       </Navbar>
 
             <div className="container d-flex justify-content-between align-items-center">
-                <img src={zomatologo} style={{ width: "8rem", position: "relative", left: "2%", cursor: "pointer" }} alt="" />
+               
                 <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
             </div>
 
@@ -68,14 +67,16 @@ const Search = () => {
 
                     <Form.Control type="text"
                         onChange={(e) => chanegData(e.target.value)}
-                        placeholder="Search Restaurant" />
+                        placeholder="Search Venue" />
                 </Form.Group>
-
+                <button className='btn text-light col-lg-1' style={{ background: "#24014E" }}>Submit</button>
             </Form>
+
+            
 
 
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Ahmedabad Open now</h2>
+                <h2 className='px-4' style={{ fontWeight: 400 }}>Venues available</h2>
 
                 <div className="row mt-2 d-flex justify-content-around align-items-center">
                     {copydata && copydata.length ? <Cards data={copydata} /> : <Set  sdata={fdata}/>}
