@@ -49,7 +49,7 @@ const Search = () => {
                         onChange={(e) => chanegData(e.target.value)}
                         placeholder="Search Restaurant" />
                 </Form.Group>
-                <button className='btn text-light col-lg-1' style={{ background: "#ed4c67" }}>Submit</button>
+                <button className='btn text-light col-lg-2' style={{ background: " #24014E" }}>Submit</button>
             </Form>
 
 
