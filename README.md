@@ -1,1 +1,1 @@
-# zomato-venue-cards
+venue-cards
