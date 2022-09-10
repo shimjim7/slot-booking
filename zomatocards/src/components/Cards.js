@@ -14,7 +14,7 @@ const Cards = ({ data }) => {
                                 <div className="card_body">
                                     <div className="upper_data d-flex justify-content-between align-items-center">
                                         <h4 className='mt-2'>{element.rname}</h4>
-                                        <span>{element.rating}&nbsp;★</span>
+                                        
                                     </div>
 
                                     <div className="lower_data d-flex  justify-content-between">
@@ -36,6 +36,7 @@ const Cards = ({ data }) => {
                         </>
                     )
                 })
+
             }
 
         </>
@@ -43,3 +44,5 @@ const Cards = ({ data }) => {
 }
 
 export default Cards
+
+
