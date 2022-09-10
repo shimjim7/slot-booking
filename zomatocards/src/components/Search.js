@@ -8,12 +8,7 @@ import Set from './Set'
 const Search = () => {
 
     const [fdata, setFdata] = useState(Fooddata);
-    // console.log(fdata);
-
     const [copydata, setCopyData] = useState([]);
-
-    // console.log(copydata);
-
 
     const chanegData = (e) => {
         let getchangedata = e.toLowerCase();
@@ -29,9 +24,7 @@ const Search = () => {
         }
     }
 
-
     const zomatologo = "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
-
 
     useEffect(() => {
 
