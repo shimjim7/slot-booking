@@ -4,6 +4,8 @@ import "./style.css"
 import Form from 'react-bootstrap/Form'
 import Cards from './Cards'
 import Set from './Set'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 const Search = () => {
 
@@ -36,6 +38,25 @@ const Search = () => {
 
     return (
         <>
+
+        
+      <Navbar bg="light" fixed="top">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+            
+              alt=""
+              src="/logo.svg"
+              width="30"
+              height="90px"
+              className="d-inline-block align-top"
+
+            />{' '}
+            React Bootstrap
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+
             <div className="container d-flex justify-content-between align-items-center">
                 <img src={zomatologo} style={{ width: "8rem", position: "relative", left: "2%", cursor: "pointer" }} alt="" />
                 <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
