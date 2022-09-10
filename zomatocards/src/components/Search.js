@@ -56,6 +56,10 @@ const Search = () => {
         </Container>
       </Navbar>
 
+            <div className="container d-flex justify-content-between align-items-center">
+               
+                <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
+            </div>
 
 
             <Form className='d-flex justify-content-center align-items-center mt-3'>
@@ -63,7 +67,7 @@ const Search = () => {
 
                     <Form.Control type="text"
                         onChange={(e) => chanegData(e.target.value)}
-                        placeholder="Search Restaurant" />
+                        placeholder="Search Venue" />
                 </Form.Group>
                 <button className='btn text-light col-lg-1' style={{ background: "#24014E" }}>Submit</button>
             </Form>
@@ -72,7 +76,7 @@ const Search = () => {
 
 
             <section className='iteam_section mt-4 container'>
-                <h2 className='px-4' style={{ fontWeight: 400 }}>Restaurants in Ahmedabad Open now</h2>
+                <h2 className='px-4' style={{ fontWeight: 400 }}>Venues available</h2>
 
                 <div className="row mt-2 d-flex justify-content-around align-items-center">
                     {copydata && copydata.length ? <Cards data={copydata} /> : <Set  sdata={fdata}/>}
