@@ -1,12 +1,11 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Search from './components/Search';
+import Search from './components/Modal/Modal/Modal';
 
 
 function App() {
   return (
     <>
-    <Search />    
+    <Modal />    
     </>
     
   );
